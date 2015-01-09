@@ -13,8 +13,8 @@
  puts " Welcome to my exciting world of Paper, Rock, Scissors"
 
 #Create two global variables to keep track and count of game outcomes
-$user_wins_count = 0
-$computer_wins_count = 0
+ $user_wins_count = 0
+ $computer_wins_count = 0
 
 #Define a method to print choice results
 def print_winning_choices(winning_choices)
