@@ -3,23 +3,18 @@
 # Playing the game - Each player picks either a paper, rock or scissors
 # Winning the game - paper > rock > scissors > paper
 #  Ask if user wants to play again
-
-
-
-
-
 # There are only 3 choices, so create a constant and use an array or hash to hold them
 
 
 #Create a hash to store game choices
-CHOICES = {'p' =>"Paper", 'r'=> "Rock", 's'=> "Scissors"}
+ CHOICES = {'p' =>"Paper", 'r'=> "Rock", 's'=> "Scissors"}
 
 #Print a welcome message for game user
-puts " Welcome to my exciting world of Paper, Rock, Scissors"
+ puts " Welcome to my exciting world of Paper, Rock, Scissors"
 
 #Create two global variables to keep track and count of game outcomes
-$user_wins_count = 0
-$computer_wins_count = 0
+ $user_wins_count = 0
+ $computer_wins_count = 0
 
 #Define a method to print choice results
 def print_winning_choices(winning_choices)
@@ -56,8 +51,8 @@ loop do
   while true
 
   puts "Please pick one [r, p or s]"
-   # Declare a variable to hold your selection
-   user_picked = gets.chomp.downcase
+  # Declare a variable to hold your selection
+  user_picked = gets.chomp.downcase
   break if /^[rps]$/.match(user_picked)
   puts "Invalid entry, please try again."
   
